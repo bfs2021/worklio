@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://github.com/tanveersultan53/worklio/security/policy
+    about: Please report security issues privately. Do not open a public issue.
+  - name: Roadmap and product blueprint
+    url: https://github.com/tanveersultan53/worklio/blob/main/docs/ROADMAP.md
+    about: Check what is already planned before requesting a feature.

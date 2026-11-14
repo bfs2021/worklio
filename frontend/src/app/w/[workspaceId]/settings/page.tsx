@@ -1,0 +1,11 @@
+import { Suspense } from "react";
+
+import { SettingsView } from "./settings-view";
+
+export default function WorkspaceSettingsPage() {
+  return (
+    <Suspense fallback={null}>
+      <SettingsView />
+    </Suspense>
+  );
+}

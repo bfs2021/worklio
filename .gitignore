@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+frontend/tsconfig.tsbuildinfo
+
+# Env (never commit secrets; the examples are safe to commit)
+.env
+.env*
+!.env.example
+!.env.production.example
+frontend/.env*.local
+
+# IDE / OS
+.idea/
+.junie/
+.DS_Store
+
+# Local AI-assistant tooling (third-party skills, not part of Worklio)
+.agents/
+.claude/
+skills-lock.json

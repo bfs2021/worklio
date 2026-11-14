@@ -1,0 +1,9 @@
+{
+  "identities": [
+    {
+      "name": "worklio",
+      "credentials": [{ "accessKey": "worklio", "secretKey": "worklio-secret" }],
+      "actions": ["Admin", "Read", "Write", "List", "Tagging"]
+    }
+  ]
+}

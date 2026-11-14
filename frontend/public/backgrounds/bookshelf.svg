@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a2a20"/>
+      <stop offset="1" stop-color="#2a1d16"/>
+    </linearGradient>
+    <linearGradient id="plank" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8a6446"/>
+      <stop offset="1" stop-color="#6b4b34"/>
+    </linearGradient>
+    <radialGradient id="warm" cx="0.5" cy="0.35" r="0.75">
+      <stop offset="0" stop-color="#ffd9a0" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.45"/>
+    </radialGradient>
+    <filter id="dof" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur stdDeviation="6"/></filter>
+    <g id="row1">
+      <rect x="0" y="-180" width="44" height="180" rx="4" fill="#b5523b"/>
+      <rect x="50" y="-160" width="36" height="160" rx="4" fill="#e3b25c"/>
+      <rect x="92" y="-195" width="52" height="195" rx="4" fill="#2f5d62"/>
+      <rect x="150" y="-150" width="30" height="150" rx="4" fill="#d8cfc0"/>
+      <rect x="186" y="-175" width="46" height="175" rx="4" fill="#6c4f8a"/>
+      <rect x="238" y="-140" width="34" height="140" rx="4" fill="#c97b4a"/>
+      <rect x="290" y="-170" width="40" height="170" rx="4" transform="rotate(-12 330 0)" fill="#4b7f6a"/>
+      <rect x="350" y="-185" width="48" height="185" rx="4" fill="#1f3b57"/>
+      <rect x="404" y="-160" width="32" height="160" rx="4" fill="#e9d8a6"/>
+      <rect x="442" y="-178" width="44" height="178" rx="4" fill="#94473a"/>
+    </g>
+    <g id="row2">
+      <rect x="0" y="-150" width="38" height="150" rx="4" fill="#3d6b8c"/>
+      <rect x="44" y="-185" width="50" height="185" rx="4" fill="#d79a52"/>
+      <rect x="100" y="-165" width="34" height="165" rx="4" fill="#7b3f4f"/>
+      <rect x="140" y="-140" width="44" height="140" rx="4" fill="#cfc4b0"/>
+      <circle cx="250" cy="-60" r="58" fill="#4e7d55"/>
+      <rect x="215" y="-40" width="70" height="40" rx="8" fill="#c7b199"/>
+      <rect x="320" y="-175" width="40" height="175" rx="4" fill="#5a4c7e"/>
+      <rect x="366" y="-155" width="36" height="155" rx="4" fill="#b8653f"/>
+      <rect x="408" y="-190" width="48" height="190" rx="4" fill="#2b4a3d"/>
+    </g>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#wood)"/>
+  <g filter="url(#dof)">
+    <g fill="url(#plank)">
+      <rect x="0" y="320" width="1920" height="26"/>
+      <rect x="0" y="610" width="1920" height="26"/>
+      <rect x="0" y="900" width="1920" height="26"/>
+      <rect x="470" y="0" width="22" height="1080"/>
+      <rect x="960" y="0" width="22" height="1080"/>
+      <rect x="1450" y="0" width="22" height="1080"/>
+    </g>
+    <use href="#row1" x="10" y="320"/>
+    <use href="#row2" x="510" y="320"/>
+    <use href="#row2" x="1000" y="320"/>
+    <use href="#row1" x="1490" y="320" opacity="0.95"/>
+    <use href="#row2" x="10" y="610"/>
+    <use href="#row1" x="510" y="610"/>
+    <use href="#row1" x="1000" y="610" opacity="0.9"/>
+    <use href="#row2" x="1490" y="610"/>
+    <use href="#row1" x="10" y="900"/>
+    <use href="#row2" x="510" y="900"/>
+    <use href="#row2" x="1000" y="900"/>
+    <use href="#row1" x="1490" y="900"/>
+  </g>
+  <rect width="1920" height="1080" fill="url(#warm)"/>
+</svg>
